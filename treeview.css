@@ -1,0 +1,105 @@
+body {background-color: #4682B4;}
+
+.blackText {
+	color: black;
+}
+
+.whiteText {
+	color: white;
+}
+
+.boldText {
+	font-weight: bold;
+}
+
+.underlineText {
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+#div-tree {
+	margin: 25px;
+	padding: 0px;
+}
+
+#navigationTree {
+	margin: 0px;
+	padding: 0px;
+	font-size: 12px;
+    font-family: verdana,helvetica;
+    text-decoration: none;   
+}
+
+ ul {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 20px;
+	list-style: none;
+	line-height: 2em;
+}
+ ul li {
+	position: relative;
+}
+ ul li:before {
+	position: absolute;
+	left: -15px;
+	top: 0px;
+	content: '';
+	display: block;
+	border-left: 2px solid #ddd;
+	height: 1em;
+	border-bottom: 2px solid #ddd;
+	width: 10px;
+}
+ ul li:after {
+	position: absolute;
+	left: -15px;
+	bottom: -7px;
+	content: '';
+	display: block;
+	border-left: 2px solid #ddd;
+	height: 100%;
+}
+ ul li.root {
+	margin: 0px 0px 0px -20px;
+}
+ ul li.root:before {
+	display: none;
+}
+ ul li.root:after {
+	display: none;
+}
+ ul li:last-child:after {
+	display: none;
+}
+
+
+/* Style the expandable section */
+.sezione {
+	cursor: pointer;
+	-webkit-user-select: none; /* Safari 3.1+ */
+  	-moz-user-select: none; /* Firefox 2+ */
+  	-ms-user-select: none; /* IE 10+ */
+	user-select: none; /* Prevent text selection */
+}
+
+/* Create icon expandable, and style it */
+li.sezione::before {
+	display: inline-block;
+	/*content: url(./images/nav-plus.gif);*/
+}
+
+/* Change icon when clicked on (using JavaScript) */
+li.sezione-expanded::before {
+	/*content: url(./images/nav-minus.gif);*/
+}
+
+/* Hide the nested list */
+.nested {
+	display: none;
+}
+
+/* Show the nested list when the user clicks on the icon (with JavaScript) */
+.active {
+	display: block;
+}
+ 

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="it">
+	<head>
+		<meta charset="utf-8">
+		<title>Tree view example</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="A simple HTML5 Template for new projects.">
+		<meta name="author" content="fturturo">
+		<link rel="stylesheet" href="treeview.css" type="text/css" />
+	</head>
+	<body onload="expandableTree()">
+		<div id="div-tree">
+			<ul id="navigationTree" class="whiteText">
+				<!-- <li class="root">Menu</li> -->
+				<li><span class="sezione">Lorem ipsum</span>
+					<ul class="nested">
+						<li><span class="whiteText"><a href="#">Adipiscing elit.</a></span></li>
+						<li><span class="whiteText"><a href="#">Tincidunt mauris eu risus.</a></span></li>
+						<li><span class="whiteText"><a href="#">Vestibulum</a></span></li>
+					</ul>
+				</li>
+				<li><span class="whiteText"><a href="#">Aliquam</a></span></li>
+				<li><span class="sezione">Dapibus</span>
+					<ul class="nested">
+						<li><span class="whiteText"><a href="#">Aliquam tincidunt mauris eu risus.</a></span></li>
+						<li><span class="whiteText"><a href="#">Vestibulum auctor dapibus neque.</a></span></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<!-- your content here... -->
+		<script type="text/javascript" src="treeview.js"></script>
+		<script type="text/javascript">
+		window.onload = function() {
+			 expandableTree();
+		};
+		</script>
+	</body>
+</html>
