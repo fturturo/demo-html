@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="it">
+	<head>
+		<meta charset="utf-8">
+		<title>Simple Tree Menu</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="A simple HTML5 Template for new projects.">
+		<meta name="author" content="fturturo">
+		<link rel="stylesheet" href="tree.css" type="text/css" />
+	</head>
+  <body>
+    <ul class="tree">
+      <!-- (A) "NORMAL" ITEMS -->
+      <li>Item A</li>
+      <li>Item B</li>
+      
+      <!-- (B) SECTION -->
+      <li class="section">
+        <input type="checkbox" id="groupA"/>
+        <label for="groupA">Group A</label>
+        <ul>
+          <li>Group A Item 1</li>
+          <li>Group A Item 2</li>
+        </ul>
+      </li>
+      
+      <!-- (C) SECTION WITH SUB-SECTION -->
+      <li class="section">
+        <input type="checkbox" id="groupB"/>
+        <label for="groupB">Group B</label>
+        <ul>
+          <li>Group B Item 1</li>
+          <li>Group B Item 2</li>
+          <!-- SUB-SECTION -->
+          <li class="section">
+            <input type="checkbox" id="groupC"/>
+            <label for="groupC">Group C</label>
+            <ul>
+              <li>Group C Item 1</li>
+              <li>Group C Item 2</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>
